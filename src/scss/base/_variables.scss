@@ -1,0 +1,33 @@
+/* Scss Document */
+
+// Media quaries breakpoints.
+$breakpoint-xs: 575px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 991px;
+$breakpoint-lg: 1199px;
+$breakpoint-xl: 1399px;
+
+// Asset Path
+$assetPath: "/images";
+
+/* Font Family */
+$opensans: "Open Sans", sans-serif;
+
+/* Colors  */
+$white: #ffffff;
+$offwhite: #eeeeee;
+$lightgray: #aaaaaa;
+$darkgray: #cccccc;
+$gray: #444444;
+$black: #151515;
+$blue: #519ef3;
+$darkblue: #5177f3;
+$red: #f3516b;
+$yellow: #e4f351;
+$error: #d0021b;
+$google: #db4437;
+$facebook: #3b5998;
+$linkedin: #0077b5;
+$autodesk: #0696d7;
+$green: #7dbba5;
+$brown: #d2732b;

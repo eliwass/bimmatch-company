@@ -1,0 +1,111 @@
+.form-group.eye i {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.colorBotton {
+  border: 1px solid rgb(243, 81, 107);
+  background-color: rgb(243, 81, 107);
+}
+
+.registerError {
+  color: red;
+  margin-top: 7px;
+  justify-content: center;
+}
+
+.login-signup {
+  .modal-footer {
+    justify-content: center;
+  }
+}
+
+.login-container {
+  @media (min-width: $breakpoint-lg) {
+    display: grid;
+    grid-template-columns: 48% auto 48%;
+  }
+
+  .left {
+    padding: 5px;
+    form {
+      max-width: 300px;
+      margin: auto;
+    }
+  }
+  .center {
+    padding: 5px;
+    @media (min-width: $breakpoint-lg) {
+      .divider {
+        width: 1px;
+        left: 30px;
+        margin: 10px auto;
+        height: 85%;
+        background: #000000;
+        content: "";
+      }
+    }
+    @media (max-width: $breakpoint-lg - 1) {
+      display: flex;
+      .divider {
+        width: 80%;
+        display: inline-block;
+        margin: auto;
+        height: 1px;
+        background: #000000;
+      }
+    }
+  }
+  .right {
+    padding: 5px;
+  }
+  .firebaseui-auth-container {
+    .firebaseui-idp-button {
+      max-width: 300px;
+    }
+    @media (max-width: $breakpoint-sm) {
+      .firebaseui-card-content {
+        padding: unset;
+      }
+    }
+  }
+}
+
+.signup-container {
+  @media (min-width: $breakpoint-md) {
+    max-width: 50%;
+  }
+
+  margin: auto;
+  .signup-top-text {
+    margin: 10px auto;
+    text-align: center;
+  }
+  .custom-checkbox {
+    width: 15px;
+    height: 15px;
+  }
+  .form-group {
+    p {
+      display: inline;
+      margin: auto 10px;
+    }
+  }
+}
+
+.login-notice {
+  margin: 20px auto;
+  text-align: center;
+  a {
+    color: $red;
+  }
+}
+
+.close {
+  img {
+    width: 25px;
+  }
+}

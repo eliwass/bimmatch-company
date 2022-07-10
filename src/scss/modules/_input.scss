@@ -1,0 +1,245 @@
+.option-popup {
+  .custom-control-input {
+    width: 100%;
+    height: 100%;
+    z-index: 97;
+    margin-left: -25px;
+  }
+}
+
+.custom-control {
+  min-height: 19px;
+  margin: 0 0 15px;
+
+  .custom-control-label {
+    padding-left: 6px;
+
+    &:before {
+      width: 19px;
+      height: 19px;
+      top: 0;
+      border-color: $gray;
+      border-radius: 5px;
+    }
+
+    &:after {
+      width: 12px;
+      height: 9px;
+      top: 5px;
+      left: -20px;
+      background-image: url(#{$assetPath}/icon/check.png) !important;
+      background-size: contain;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $gray;
+    border-color: $gray;
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+}
+
+.form-group {
+  position: relative;
+
+  .palceholder-two,
+  .palceholder-select {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-style: italic;
+    color: $lightgray;
+    display: none;
+    z-index: 9;
+  }
+
+  .select-style {
+    width: 100%;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 9px;
+      background-image: url(#{$assetPath}/icon/down-arrow.svg);
+      background-repeat: no-repeat;
+      right: 10px;
+      top: 16px;
+    }
+
+    .select-two,
+    .form-control {
+      font-size: 14px;
+      width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      color: $black;
+      height: 40px;
+      padding: 5px 15px;
+      border: 1px solid $lightgray;
+      border-radius: 0px;
+
+      &:focus {
+        outline: 0;
+        border-color: $lightgray;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .search-style {
+    width: 100%;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-image: url(#{$assetPath}/icon/search.svg);
+      background-repeat: no-repeat;
+      right: 10px;
+      top: 10px;
+    }
+
+    .form-control {
+      font-size: 14px;
+      width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      color: $black;
+      height: 40px;
+      padding: 5px 15px;
+      border: 1px solid $lightgray;
+      border-radius: 0px;
+
+      &:focus {
+        outline: 0;
+        border-color: $lightgray;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.form-control {
+  font-size: 14px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  color: $black;
+  height: 40px;
+  padding: 5px 15px;
+  border: 1px solid $lightgray !important;
+  border-radius: 0px;
+
+  &:focus {
+    outline: 0 !important;
+    border-color: $lightgray !important;
+    box-shadow: none !important;
+  }
+}
+
+.form-group {
+  .input-two {
+    font-size: 14px;
+    height: 40px;
+    border-color: $lightgray;
+    border-radius: 0;
+  }
+}
+
+.form-group {
+  .textarea-two {
+    font-size: 14px;
+    height: 80px !important;
+    border-color: $lightgray;
+    border-radius: 0;
+  }
+}
+
+.select-lable {
+  a {
+    font-weight: 500;
+    color: $blue !important;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px !important;
+  max-width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aaaaaa;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: $blue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $blue;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.dropdown-menu .custom-control .custom-control-label:before {
+  top: 2px;
+}
+
+.dropdown-menu .custom-control .custom-control-label:after {
+  top: 7px;
+}

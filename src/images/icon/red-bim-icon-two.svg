@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105.625" height="81.375" viewBox="0 0 105.625 81.375">
+  <g id="red-bim-icon-two" transform="translate(4369.625 19942.375)">
+    <g id="red-bim-icon" transform="translate(-4334 -19942)">
+      <g id="Landing-Short-Desktop-HD-Invalid" transform="translate(-648 -426)">
+        <g id="upload" transform="translate(331 363)">
+          <g id="_3D-upload" data-name="3D-upload" transform="translate(22 23)">
+            <g id="first-Error">
+              <g id="first">
+                <path id="Shape" d="M330,40,295,60.25v40.5L330,121l35-20.25V60.25Zm28,22L330,78,302,62l28-16Zm-58,3,28,16.33V114L300,97.67Zm32,49V81.33L360,65V97.67Z" fill="#d0021b"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Icon_ionic-ios-information-circle-outline" data-name="Icon ionic-ios-information-circle-outline" transform="translate(-4369.375 -19942.125)">
+      <path id="Path_6" data-name="Path 6" d="M16.552,23.351a1.449,1.449,0,1,0,1.441-1.406A1.408,1.408,0,0,0,16.552,23.351Zm.1-2.51h2.686V10.709H16.65Z" transform="translate(-3.375 -2.834)" fill="#d0021b" stroke="#d0021b" stroke-width="0.5"/>
+      <path id="Path_7" data-name="Path 7" d="M18,30.656a12.651,12.651,0,1,0-8.951-3.705A12.573,12.573,0,0,0,18,30.656m0,1.969A14.625,14.625,0,1,1,32.625,18,14.623,14.623,0,0,1,18,32.625Z" transform="translate(-3.375 -3.375)" fill="#d0021b" stroke="#d0021b" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

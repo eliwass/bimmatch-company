@@ -1,0 +1,129 @@
+button {
+  &:focus {
+    outline: 0;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.edit-button {
+  background: transparent;
+  border: 1px solid $blue;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  @include background-opacity($white, 0.5);
+
+  svg {
+    fill: $blue;
+  }
+
+  &:hover {
+    background: $blue;
+    -webkit-box-shadow: 3px 3px 6px rgba(21, 21, 21, 0.3);
+    -moz-box-shadow: 3px 3px 6px rgba(21, 21, 21, 0.3);
+    box-shadow: 3px 3px 6px rgba(21, 21, 21, 0.3);
+
+    svg {
+      circle {
+        fill: $blue;
+      }
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.white-button {
+  display: inline-block;
+  padding: 10px 19px;
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $white;
+    border-color: $white;
+    color: $black;
+  }
+}
+
+.blue-button {
+  display: inline-block;
+  padding: 10px 19px;
+  color: $blue;
+  background-color: transparent;
+  border: 1px solid $blue;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $darkblue;
+    color: $white;
+    border-color: $darkblue;
+  }
+}
+
+.ash-button {
+  display: inline-block;
+  padding: 10px 19px;
+  color: $lightgray;
+  background-color: transparent;
+  border: 1px solid $lightgray;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $lightgray;
+    color: $black;
+  }
+}
+
+.red-bg-button {
+  display: inline-block;
+  padding: 10px 19px;
+  color: $white;
+  background-color: $red;
+  border: 1px solid $red;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $darkblue;
+    border-color: $darkblue;
+    color: $white;
+  }
+}
+
+.blue-bg-button {
+  display: inline-block;
+  padding: 10px 19px;
+  color: $white;
+  background-color: $blue;
+  border: 1px solid $blue;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $darkblue;
+    border-color: $darkblue;
+    color: $white;
+  }
+}
+
+.red-button {
+  font-weight: 600;
+  color: $red;
+  padding: 10px 18px;
+  display: inline-block;
+  border: 1px solid $red;
+  border-radius: 5px;
+  background-color: $white;
+
+  img {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}

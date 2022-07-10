@@ -1,0 +1,83 @@
+.settings {
+  position: relative;
+  padding: 93px 0 20px;
+
+  .actions-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .actions-message {
+    display: flex;
+    justify-content: center;
+  }
+  .success-icon {
+    max-width: 100px;
+    max-height: 100px;
+    stroke: $green;
+  }
+  .success-text {
+    color: $green;
+    margin: auto 20px;
+  }
+  .warn-icon {
+    max-width: 100px;
+    max-height: 100px;
+    stroke: $red;
+  }
+
+  .warn-text {
+    color: $red;
+    margin: auto 20px;
+  }
+}
+
+.settings-menu-container {
+  .nav {
+    margin: 20px auto;
+    .nav-link {
+      font-size: 16px;
+      color: $black;
+    }
+    .nav-link.active {
+      border-bottom: 2px solid $red;
+    }
+  }
+}
+
+.marketing-settings-container {
+  @media (min-width: $breakpoint-md) {
+    max-width: 50%;
+  }
+  margin: auto;
+  padding: 5px;
+  .top-message {
+    margin: 30px auto;
+  }
+  .form-group {
+    input[type="checkbox"] {
+      top: 2px;
+      position: relative;
+    }
+    p {
+      display: inline;
+      margin: auto 10px;
+    }
+    button {
+      margin: 20px auto;
+    }
+  }
+  .form-group.submit {
+    text-align: center;
+  }
+  .form-group.flex {
+    display: flex;
+  }
+  .notice {
+    margin: 20px auto;
+    text-align: center;
+    a {
+      color: $red;
+    }
+  }
+}

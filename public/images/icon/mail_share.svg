@@ -1,0 +1,15 @@
+<svg class="mail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+    <g transform="translate(0 -0.75)">
+        <g transform="translate(-1150 -161)">
+            <g transform="translate(892 122)">
+                <g>
+                    <g>
+                        <g transform="translate(258 39.75)">
+                            <path fill="currentColor" d="M0,0V18H24V0ZM12,9.513,2.652,1.5h18.7Zm0,1.975,2.925-2.506L21.5,16.5H2.5L9.075,8.981Zm10.5,3.875L16.063,8.005,22.5,2.487ZM7.937,8,1.5,15.36V2.487Z" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

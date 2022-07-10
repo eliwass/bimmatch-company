@@ -1,0 +1,170 @@
+/* Scss Document */
+
+.addui-slider {
+  display: block;
+  box-sizing: border-box;
+}
+
+.addui-slider * {
+  box-sizing: border-box;
+}
+
+.addui-slider:not(.addui-slider-isrange) {
+  cursor: pointer;
+}
+
+.addui-slider .addui-slider-track {
+  display: block;
+  position: relative;
+  background: $offwhite;
+  border-radius: 0;
+}
+
+.addui-slider .addui-slider-track .addui-slider-range {
+  display: block;
+  background: $lightgray;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+}
+
+.addui-slider .addui-slider-track .addui-slider-handle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 1s, box-shadow 1s;
+  z-index: 0;
+}
+
+.addui-slider .addui-slider-track .addui-slider-handle .addui-slider-value {
+  display: block;
+  float: right;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-top: 0px;
+  color: $gray;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s, background 1s, transform 1s, margin 1s,
+    border-radius 1s;
+  transform: scale(1, 0) rotate(-135deg);
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 1;
+}
+
+.addui-slider
+  .addui-slider-track
+  .addui-slider-handle
+  .addui-slider-value
+  span {
+  display: block;
+  transform: rotate(135deg);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 27px;
+  position: absolute;
+  z-index: 1;
+}
+
+.addui-slider
+  .addui-slider-track
+  .addui-slider-handle.addui-slider-handle-active
+  .addui-slider-value {
+  opacity: 1;
+  transform: scale(1, 1) rotate(-135deg);
+  margin-top: -25px;
+  font-weight: 600;
+}
+
+.addui-slider-handle.addui-slider-handle-l.addui-slider-handle-active.right-value
+  .addui-slider-value {
+  margin-left: -14px;
+  font-size: 14px;
+}
+
+.addui-slider-handle.addui-slider-handle-l.addui-slider-handle-active.left-value
+  .addui-slider-value {
+  margin-left: -15px;
+}
+
+.addui-slider .addui-slider-track .addui-slider-handle:after {
+  display: block;
+  content: " ";
+  width: 12px;
+  height: 12px;
+  background: $blue;
+  border-radius: 6px;
+  position: relative;
+  top: 2px;
+  left: 0;
+}
+
+.addui-slider.addui-slider-vertical {
+  height: calc(100% - 50px);
+  width: 50px;
+  margin: 25px 16px;
+}
+
+.addui-slider.addui-slider-vertical .addui-slider-track {
+  height: 100%;
+  width: 4px;
+  top: 0;
+  left: 23px;
+}
+
+.addui-slider.addui-slider-vertical .addui-slider-track .addui-slider-range {
+  width: 4px;
+  height: auto;
+}
+
+.addui-slider.addui-slider-vertical .addui-slider-track .addui-slider-handle {
+  left: -24px;
+  top: auto;
+  transform: translateY(50%);
+}
+
+.addui-slider.addui-slider-vertical
+  .addui-slider-track
+  .addui-slider-handle.addui-slider-handle-l {
+  z-index: 2;
+}
+
+.addui-slider.addui-slider-horizontal {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.addui-slider.addui-slider-horizontal .addui-slider-track {
+  height: 4px;
+  width: 100%;
+  top: 8px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.addui-slider.addui-slider-horizontal .addui-slider-track .addui-slider-range {
+  width: auto;
+  height: 4px;
+}
+
+.addui-slider.addui-slider-horizontal .addui-slider-track .addui-slider-handle {
+  left: auto;
+  top: -6px;
+  transform: translateX(-50%);
+}
+
+.addui-slider
+  .addui-slider-track
+  .addui-slider-handle:hover
+  .addui-slider-value
+  span {
+  font-size: 12px !important;
+}

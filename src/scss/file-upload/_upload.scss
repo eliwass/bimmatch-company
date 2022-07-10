@@ -1,0 +1,278 @@
+.file-upload-wrap {
+  width: 703px;
+  margin: 0 auto 0;
+  padding: 20px;
+  background: $white;
+  position: relative;
+
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+
+  &:hover {
+    .content-wrap {
+      background: $white !important;
+    }
+  }
+
+  .content-wrap {
+    border: 4px dashed #aaaaaa;
+    border-radius: 25px;
+
+    .icon-wrap {
+      width: 100%;
+      min-height: 90px;
+      margin: 42px 0 17px;
+      position: relative;
+      // display: block !important;
+      text-align: center;
+      display: -webkit-box !important;
+      display: -webkit-flex !important;
+      display: -moz-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      @include justify-content(center);
+      @include align-items(center);
+      @include flex-wrap(wrap);
+
+      .main-icon {
+        width: 70px;
+        height: 80px;
+        background-image: url(#{$assetPath}/icon/black-bim-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .main-icon-img {
+        width: 70px;
+        height: 60px;
+        background-image: url(#{$assetPath}/icon/upload-img-black.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+
+      .drag-button {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        font-style: italic;
+        color: $gray;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        margin: 0 0 15px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 99;
+        }
+      }
+
+      .drag-message {
+        font-size: 18px;
+        font-weight: 600;
+        color: $gray;
+        font-style: italic;
+        width: 100%;
+        float: left;
+        margin: 5px 0 47px;
+      }
+
+      .imageuploadify-container {
+        width: 20%;
+        height: 50px;
+        padding: 0 10px;
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px !important;
+        z-index: 999;
+
+        .remove-button {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          top: 0;
+          right: 10px;
+          background-image: url(#{$assetPath}/icon/close-white.svg);
+          background-repeat: no-repeat;
+          border: none;
+          background-color: $black;
+          background-size: 50%;
+          background-position: center;
+          border: none;
+          z-index: 9;
+          cursor: pointer;
+        }
+
+        .imageuploadify-details {
+          position: relative;
+          left: inherit;
+          top: inherit;
+          right: inherit;
+          bottom: inherit;
+          background-color: transparent;
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+
+          span {
+            font-weight: 700;
+            color: $gray;
+            margin: 0 !important;
+
+            &:first-child {
+              position: relative;
+              padding: 0;
+              margin: 0 0 5px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              @include translate(0, 0);
+              top: inherit;
+              left: inherit;
+
+              svg {
+                width: 35px;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.upload-wrap .file-upload-wrap {
+  &.home-uploader {
+    @include background-opacity($white, 0.69);
+
+    .content-wrap {
+      @include background-opacity($white, 0.5);
+    }
+
+    .file-there,
+    .file-there-img {
+      .content-wrap {
+        .imageuploadify-overlay {
+          display: -webkit-box !important;
+          display: -webkit-flex !important;
+          display: -moz-flex !important;
+          display: -ms-flexbox !important;
+          display: flex !important;
+          @include justify-content(center);
+          @include align-items(center);
+          @include flex-wrap(wrap);
+
+          .main-icon {
+            width: 33px;
+            height: 38px;
+            background-size: contain;
+            display: inline-block;
+            margin: 0 8px 0 0;
+          }
+
+          .main-icon-img {
+            width: 33px;
+            height: 33px;
+            background-size: contain;
+            display: inline-block;
+            margin: 0 8px 0 0;
+          }
+
+          .imageuploadify-container {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 600;
+            margin-right: 10px;
+            position: relative;
+
+            &:not(:first-child)::after {
+              content: ",";
+              position: absolute;
+              right: -5px;
+              top: 0;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .file-upload-wrap-two {
+    &.error {
+      .content-wrap {
+        border-color: $error !important;
+
+        .imageuploadify-overlay {
+          .main-icon {
+            width: 106px;
+            height: 82px;
+            background-image: url(#{$assetPath}/icon/red-bim-icon-two.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            display: block;
+            margin: 0 auto;
+          }
+
+          .imageuploadify-container {
+            display: none;
+          }
+        }
+
+        .imageuploadify-images-list {
+          .drag-button {
+            color: $error !important;
+          }
+
+          .imageuploadify-message {
+            color: $error !important;
+          }
+
+          .imageuploadify-container {
+            .imageuploadify-details {
+              span {
+                color: $error !important;
+
+                svg {
+                  fill: $error !important;
+                }
+              }
+
+              .remove-button {
+                background-color: $error !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>235E0D7B-B47E-4ED1-9CB3-3FF50B45F79D</title>
+    <g id="Projects" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1134.000000, -18.000000)" id="Header-signed">
+            <g>
+                <g id="Icon-24-Copy-2" transform="translate(1135.000000, 19.000000)">
+                    <polygon id="Rectangle-7-Copy-18" fill="#F3516B" fill-rule="nonzero" transform="translate(15.609211, 15.507786) rotate(45.000000) translate(-15.609211, -15.507786) " points="15.9048859 8.7609809 22.356016 15.212111 15.313536 22.2545909 8.86240589 15.8034608"></polygon>
+                    <polygon id="Line-2-Copy" stroke="#151515" stroke-linecap="square" transform="translate(15.466615, 15.499631) scale(1, -1) translate(-15.466615, -15.499631) " points="20.4258796 20.4996904 20.4258796 10.5010078 10.507351 10.4995709 10.507351 20.4996904"></polygon>
+                    <g id="Group-7" transform="translate(5.000000, 26.000000) rotate(-180.000000) translate(-5.000000, -26.000000) translate(0.000000, 21.000000)" stroke="#151515">
+                        <path d="M0.128679656,7.0331464 L4.42053796,3.24984747 C4.80618126,2.90990063 5.38674776,2.91773759 5.76307436,3.26797012 L9.86595686,7.08636281" id="Path-Copy-2" transform="translate(4.997318, 5.043181) rotate(-315.000000) translate(-4.997318, -5.043181) "></path>
+                        <path d="M2.27373675e-13,8.22248622 L2.17053796,6.56050764 C2.55618126,6.22056081 3.13674776,6.22839777 3.51307436,6.5786303 L5.49463651,8.27570263" id="Path-Copy-3" transform="translate(2.747318, 7.293181) rotate(-315.000000) translate(-2.747318, -7.293181) "></path>
+                    </g>
+                    <g id="Group-6" transform="translate(20.871320, 0.000000)" stroke="#151515">
+                        <path d="M0,8.22248622 L2.17053796,6.56050764 C2.55618126,6.22056081 3.13674776,6.22839777 3.51307436,6.5786303 L5.49463651,8.27570263" id="Path-Copy" transform="translate(2.747318, 7.293181) rotate(-315.000000) translate(-2.747318, -7.293181) "></path>
+                        <path d="M0.128679656,7.0331464 L4.42053796,3.24984747 C4.80618126,2.90990063 5.38674776,2.91773759 5.76307436,3.26797012 L9.86595686,7.08636281" id="Path" transform="translate(4.997318, 5.043181) rotate(-315.000000) translate(-4.997318, -5.043181) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

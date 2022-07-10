@@ -1,0 +1,25 @@
+.project-list {
+  position: relative;
+  padding: 93px 0 20px;
+
+  h1 {
+    margin: 0 0 40px;
+  }
+
+  .dropdown {
+    float: right;
+    margin: 12px 0 0;
+
+    .dropbtn {
+      img {
+        width: 18px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .links {
+    color: $blue;
+    cursor: pointer;
+  }
+}
